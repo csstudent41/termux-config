@@ -1,5 +1,7 @@
 #!/bin/sh
 
+termux-wake-lock
+
 for prog in sshd syncthing; do
 	pidof -q "$prog" || "$prog" &
 done >/dev/null 2>&1

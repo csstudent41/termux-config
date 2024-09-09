@@ -1,4 +1,6 @@
 #!/bin/sh
 
-pkill sshd
 pkill syncthing
+pkill sshd
+
+termux-wake-unlock
